@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- *View Attribute -->
+    <dimen name="card_radius">8dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="card_avatar_size">60dp</dimen>
+    <dimen name="card_comment_avatar_size">48dp</dimen>
+    <dimen name="card_margin_hor">16dp</dimen>
+    <dimen name="card_margin_around">10dp</dimen>
+    <dimen name="card_margin_top">5dp</dimen>
+    <dimen name="card_margin_divider_top">25dp</dimen>
+    <dimen name="card_body_textsize">12sp</dimen>
+    <dimen name="title_textsize">16sp</dimen>
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="btn_textsize">16sp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="btn_radius">10dp</dimen>
+    <dimen name="item_post_see_more_margin_left">20dp</dimen>
+
+
+    <!-- List posts activity -->
+    <dimen name="list_post_animation_size">150dp</dimen>
+    <dimen name="list_post_shadow_height">60dp</dimen>
+    <dimen name="list_post_animation_margin_top">50dp</dimen>
+    <dimen name="list_post_width_width">200dp</dimen>
+    <dimen name="list_post_recyclerview_padding_bottom">20dp</dimen>
+
+    <!-- Post detail activity -->
+    <dimen name="post_detail_title_textsize">20sp</dimen>
+    <dimen name="post_detail_body_textsize">14sp</dimen>
+    <dimen name="post_detail_fullname_textsize">20sp</dimen>
+    <dimen name="post_detail_comment_anim_size">50dp</dimen>
+    <dimen name="post_detail_comment_anim_margin_left">40dp</dimen>
+    <dimen name="post_detail_comment_btn_margin">15dp</dimen>
+    <dimen name="post_detail_body_margin_top">20dp</dimen>
+    <dimen name="post_detail_content_padding">15dp</dimen>
+    <dimen name="post_detail_avatar_size">60dp</dimen>
+    <dimen name="post_detail_fullname_margin_left">20dp</dimen>
+    <dimen name="post_detail_email_icon_size">35dp</dimen>
+    <dimen name="post_detail_email_icon_margin">20dp</dimen>
+    <dimen name="post_detail_email_icon_padding">7dp</dimen>
+    <dimen name="post_detail_header_height">200dp</dimen>
+    <dimen name="post_detail_reload_btn_margin_top">50dp</dimen>
+
+    <!-- Comments list popup-->
+    <dimen name="comment_popup_padding_top">30dp</dimen>
+    <dimen name="comment_popup_padding_hor">15dp</dimen>
+    <dimen name="comment_popup_close_btn_padding_ver">20dp</dimen>
+    <dimen name="comment_popup_list_padding">10dp</dimen>
+    <dimen name="comment_popup_list_padding_bottom">20dp</dimen>
+    <dimen name="comment_popup_title_textsize">16sp</dimen>
+    <dimen name="comment_popup_title_margin_hor">10dp</dimen>
+    <dimen name="comment_popup_title_margin_bottom">15dp</dimen>
+    <dimen name="bg_card_radius">8dp</dimen>
+
+</resources>

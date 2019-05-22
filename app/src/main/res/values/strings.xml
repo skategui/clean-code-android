@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Android Tech test</string>
+    <string name="card_post_see_more_btn">see more</string>
+    <string name="post_detail_see_comments">See comments(%d)</string>
+    <string name="send_email_title">Send mail…</string>
+    <string name="error_try_again_later">An error occurred. Please try again later</string>
+    <string name="lost_internet">No internet connexion. Please try again later</string>
+    <string name="loading_in_progress">Loading in progress</string>
+    <string name="error_no_post_available">No posts available for now</string>
+    <string name="error_no_internet_connexion">You are not connected to internet</string>
+    <string name="refresh">Refresh</string>
+</resources>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.davidmigloz:drag-to-close:1.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/drag-to-close-1.0.0.aar/90d3321f95c4ce23b9c418436447383b/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/drag-to-close-1.0.0.aar/90d3321f95c4ce23b9c418436447383b/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.davidmigloz/drag-to-close/1.0.0/2936bea74eb7e93c4c6e4c99d7b261792257fd01/drag-to-close-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

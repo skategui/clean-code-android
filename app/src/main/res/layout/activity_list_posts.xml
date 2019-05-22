@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/coordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/list_post_recyclerview_padding_bottom"/>
+
+    <LinearLayout
+            android:id="@+id/llState"
+            android:layout_width="@dimen/list_post_width_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/tvStateTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/loading_in_progress"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/title_textsize"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation"
+                android:layout_width="@dimen/list_post_animation_size"
+                android:layout_height="@dimen/list_post_animation_size"
+                android:layout_marginTop="@dimen/list_post_animation_margin_top"
+                android:scaleType="centerCrop"
+                app:lottie_rawRes="@raw/loading_animation"/>
+
+        <TextView
+                android:id="@+id/tvReload"
+                style="@style/CTAButton"
+                android:layout_marginTop="@dimen/post_detail_reload_btn_margin_top"
+                android:background="@drawable/btn_primary"
+                android:text="@string/refresh"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_post_shadow_height"
+            android:layout_gravity="bottom"
+            android:background="@drawable/shadow_white"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

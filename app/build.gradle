@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+apply from: '../config/config-android.gradle'
+apply from: '../config/config-properties.gradle'
+
+android {
+    defaultConfig {
+        applicationId "guillaume.agis.teschtest"
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "guillaume.agis.teschtest.ui.di.EspressoTestRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "API_BASE_URL", "\"${config.variablesProperties.api_base_url_prod}\""
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            buildConfigField "String", "API_BASE_URL", "\"${config.variablesProperties.api_base_url_debug}\""
+        }
+    }
+}
+
+dependencies {
+    kotlin()
+    dagger()
+    networking()
+    rx()
+    architectureComponents()
+    view()
+    testing()
+}

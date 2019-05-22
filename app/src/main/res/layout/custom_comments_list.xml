@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.davidmiguel.dragtoclose.DragToClose xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:drag="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dragToClose"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_transp"
+    android:paddingStart="@dimen/comment_popup_padding_hor"
+    android:paddingTop="@dimen/comment_popup_padding_top"
+    android:paddingEnd="@dimen/comment_popup_padding_hor"
+    drag:dragtoclose_draggableContainer="@+id/card"
+    drag:dragtoclose_draggableView="@+id/close_arrow"
+    drag:dragtoclose_finishActivity="false">
+
+    <LinearLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_card_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/close_arrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/comment_popup_close_btn_padding_ver"
+            android:paddingBottom="@dimen/comment_popup_close_btn_padding_ver"
+            android:scaleType="center"
+            app:srcCompat="@drawable/close_down_arrow_dark" />
+
+        <TextView
+            android:id="@+id/popup_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comment_popup_title_margin_hor"
+            android:layout_marginRight="@dimen/comment_popup_title_margin_hor"
+            android:layout_marginBottom="@dimen/comment_popup_title_margin_bottom"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/comment_popup_title_textsize"
+            tools:text="Title" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerCommentsView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:padding="@dimen/comment_popup_list_padding"
+            android:paddingBottom="@dimen/comment_popup_list_padding_bottom" />
+    </LinearLayout>
+</com.davidmiguel.dragtoclose.DragToClose>
