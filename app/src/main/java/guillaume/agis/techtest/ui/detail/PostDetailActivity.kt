@@ -43,9 +43,9 @@ class PostDetailActivity : BaseActivity() {
     private fun getPostFromIntent() {
         val post = intent?.extras?.get(POST_SELECTED) as Post?
 
-        post?.let {
+        post?.run {
             initView()
-            initViewModel(it)
+            initViewModel(this)
         } ?: finish()
     }
 
@@ -161,7 +161,7 @@ class PostDetailActivity : BaseActivity() {
      * @param comments list of comments associated to the post
      */
     private fun seeComments(post: Post?, comments: List<Comment>) {
-        post?.let { commentsList.openCommentsList(it.title, comments) }
+        post?.run { commentsList.openCommentsList(title, comments) }
     }
 
     /**
